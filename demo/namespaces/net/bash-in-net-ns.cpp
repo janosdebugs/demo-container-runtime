@@ -15,6 +15,7 @@ static int child(void *arg) {
     char *const paramList[] = {bashPath};
 
     //Launch bash
+    printf("Launching bash inside a network namespace. ifconfig should not show any interfaces...\n");
     if (execv(bashPath, paramList) < 0) {
         perror("Failed running bash.");
         return -1;

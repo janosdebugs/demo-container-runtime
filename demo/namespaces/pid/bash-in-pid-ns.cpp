@@ -13,18 +13,22 @@ static int child(void *arg) {
     char bashPath[] = "/bin/bash";
     char *const paramList[] = {bashPath};
 
-    //Make mount point into a slave
+    //Make mount point into a slave so "outside" processes are not affected.
+    printf("Changing the /proc mountpoint to slave...\n");
     if (mount("none", "/proc", nullptr, MS_REC|MS_SLAVE, nullptr) < 0) {
         perror("Mount failed.");
         exit(EXIT_FAILURE);
     }
     //Remount proc so the namespace takes effect
+    printf("Remounting /proc so PID namespaces take effect...\n");
     if (mount("proc", "/proc", "proc", 0, nullptr) < 0) {
         perror("Mount failed.");
         exit(EXIT_FAILURE);
     }
 
+
     //Launch bash
+    printf("Launching bash in a PID namespace. ps auwfx should not show any processes outside the container.\n");
     if (execv(bashPath, paramList) < 0) {
         perror("Failed running bash.");
         return -1;
