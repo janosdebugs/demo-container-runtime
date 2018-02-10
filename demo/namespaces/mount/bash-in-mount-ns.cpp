@@ -1,6 +1,13 @@
-/**************************************************************************************************/
-/* ATTENTION! This program was written for demonstration purposes only! Do not use in production! */
-/**************************************************************************************************/
+/**
+ * This program demonstrates how mount namespaces work.
+ *
+ * ATTENTION! This program was written for demonstration purposes only! Do not use in production!
+ *
+ * @see https://pasztor.at/blog/under-the-hood-of-docker
+ * @see https://lwn.net/Articles/689856/
+ *
+ * @author Janos Pasztor
+ */
 
 #include <cstdio>
 #include <cstdlib>
