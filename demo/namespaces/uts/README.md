@@ -2,11 +2,15 @@
 
 This directory contains a sample application to demonstrate how UTS namespaces work.
 
-## Recommended reading
+# Warning
+
+THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+
+# Recommended reading
 
 - [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
 
-## Detailed modus operandi
+# Detailed modus operandi
 
 1. First of all, the program launches a function (`child`) in a separate namespace:
    ```c

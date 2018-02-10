@@ -1,7 +1,15 @@
 # Abstract
 
 This is a demo container runtime to showcase how various Linux features, like namespaces, are used to create containers.
-IT IS NOT INTENDED AS A PRODUCTION RUNTIME!
+
+# Warning
+
+THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+
+# Contents
+
+- [Simple demo applications for each aspect of containerization and detailed readmes](demo)
+- [Complex container runtime](runtime)
 
 # Further reading
 

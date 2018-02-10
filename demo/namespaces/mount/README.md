@@ -2,6 +2,10 @@
 
 This directory contains a sample application to demonstrate how mount namespaces work.
 
+## Warning
+
+THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+
 ## Recommended reading
 
 - [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
