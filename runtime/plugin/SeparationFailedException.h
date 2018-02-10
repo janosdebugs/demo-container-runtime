@@ -1,0 +1,11 @@
+#ifndef DEMO_CONTAINER_RUNTIME_SEPARATIONFAILEDEXCEPTION_H
+#define DEMO_CONTAINER_RUNTIME_SEPARATIONFAILEDEXCEPTION_H
+
+#include <exception>
+
+class SeparationFailedException: public std::exception {
+
+};
+
+
+#endif //DEMO_CONTAINER_RUNTIME_SEPARATIONFAILEDEXCEPTION_H
