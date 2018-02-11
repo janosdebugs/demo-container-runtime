@@ -1,2 +1,15 @@
 .idea
 cmake-build-debug
+*.cmake
+CMakeCache.txt
+Makefile
+progress.marks
+*.o
+*.make
+CMakeFiles
+demo/namespaces/mount/demo_namespaces_mount
+demo/namespaces/net/demo_namespaces_net
+demo/namespaces/pid/demo_namespaces_pid
+demo/namespaces/uts/demo_namespaces_uts
+demo/seccomp/demo_seccomp
+runtime/demo_runtime
