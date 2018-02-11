@@ -13,6 +13,7 @@
 
 SeparationPluginList plugins; // NOLINT
 std::vector<std::string> argv;
+std::string image;
 
 /**
  * This method encapsulates the C string magic.

@@ -13,7 +13,5 @@ int PidNamespaceSeparationPlugin::getCloneFlags() {
 }
 
 void PidNamespaceSeparationPlugin::afterClone() throw(SeparationFailedException) {
-    if (mount("proc", "/proc", "proc", 0, nullptr) < 0) {
-        throw SeparationFailedException("Failed to mount procfs. Are you root?");
-    }
+
 }

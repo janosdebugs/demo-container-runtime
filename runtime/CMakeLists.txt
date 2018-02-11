@@ -13,5 +13,5 @@ file(GLOB demo_runtime_src
     "plugin/*.h"
     "plugin/*.cpp"
 )
-add_executable(demo_runtime ${demo_runtime_src} plugin/MountSeparationPlugin.cpp plugin/MountSeparationPlugin.h)
+add_executable(demo_runtime ${demo_runtime_src})
 target_link_libraries(demo_runtime seccomp)
