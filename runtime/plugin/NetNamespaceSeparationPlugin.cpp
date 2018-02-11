@@ -5,3 +5,11 @@
 int NetNamespaceSeparationPlugin::getCloneFlags() {
     return CLONE_NEWNET;
 }
+
+void NetNamespaceSeparationPlugin::beforeClone() throw(SeparationFailedException) {
+
+}
+
+void NetNamespaceSeparationPlugin::afterClone() throw(SeparationFailedException) {
+
+}

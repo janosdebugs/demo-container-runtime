@@ -4,3 +4,4 @@ project(demo_container_runtime)
 set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory("demo")
+add_subdirectory("runtime")

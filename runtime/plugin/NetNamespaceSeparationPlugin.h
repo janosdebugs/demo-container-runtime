@@ -5,8 +5,11 @@
 
 class NetNamespaceSeparationPlugin: public SeparationPlugin {
 public:
+    void beforeClone() throw(SeparationFailedException) override;
+
+    void afterClone() throw(SeparationFailedException) override;
+
     int getCloneFlags() override;
 };
-
 
 #endif //DEMO_CONTAINER_RUNTIME_NETNAMESPACESEPARATIONPLUGIN_H

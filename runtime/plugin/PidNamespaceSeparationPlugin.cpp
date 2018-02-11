@@ -1,8 +1,5 @@
-//
-// Created by root on 10.02.18.
-//
-
 #include <sched.h>
+#include <string>
 #include <sys/mount.h>
 
 #include "PidNamespaceSeparationPlugin.h"
@@ -17,6 +14,6 @@ int PidNamespaceSeparationPlugin::getCloneFlags() {
 
 void PidNamespaceSeparationPlugin::afterClone() throw(SeparationFailedException) {
     if (mount("proc", "/proc", "proc", 0, nullptr) < 0) {
-        throw SeparationFailedException();
+        throw SeparationFailedException("Failed to mount procfs. Are you root?");
     }
 }
