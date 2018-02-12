@@ -2,6 +2,8 @@
 
 This is a demo container runtime to showcase how various Linux features, like namespaces, are used to create containers.
 
+![](screenshot.png)
+
 # Warning
 
 THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
