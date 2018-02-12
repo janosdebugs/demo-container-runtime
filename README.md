@@ -4,9 +4,14 @@ This is a demo container runtime to showcase how various Linux features, like na
 
 ![](screenshot.png)
 
-# Warning
+# Warning #1
 
 THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+
+# Warning #2
+
+YOU SHOULD PROBABLY NOT RUN THIS ON YOUR LAPTOP! Parts of this codebase mess with mount points, etc and could destroy
+your files. Or eat your cat. And maybe burn down your house. You have been warned.
 
 # Contents
 

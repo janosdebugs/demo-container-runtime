@@ -2,9 +2,14 @@
 
 This directory contains a sample application to demonstrate how mount namespaces work.
 
-## Warning
+# Warning #1
 
 THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+
+# Warning #2
+
+YOU SHOULD PROBABLY NOT RUN THIS ON YOUR LAPTOP! This codebase messes with mount points, etc and could destroy your
+files. Or eat your cat. And maybe burn down your house. You have been warned.
 
 ## Recommended reading
 
