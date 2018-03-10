@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="demo_container_runtime"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\demo\;CMake Files\demo\capabilities\;CMake Files\demo\namespaces\;CMake Files\demo\namespaces\mount\;CMake Files\demo\namespaces\net\;CMake Files\demo\namespaces\pid\;CMake Files\demo\namespaces\uts\;CMake Files\demo\seccomp\;CMake Files\runtime\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_cap">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/demo_cap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 demo_cap"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_cap/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/demo_cap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 demo_cap/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_mount">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/demo_namespaces_mount" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 demo_namespaces_mount"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_mount/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/demo_namespaces_mount" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 demo_namespaces_mount/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_net">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/demo_namespaces_net" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 demo_namespaces_net"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_net/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/demo_namespaces_net" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 demo_namespaces_net/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_pid">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/demo_namespaces_pid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 demo_namespaces_pid"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_pid/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/demo_namespaces_pid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 demo_namespaces_pid/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_uts">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/demo_namespaces_uts" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 demo_namespaces_uts"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_namespaces_uts/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/demo_namespaces_uts" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 demo_namespaces_uts/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_seccomp">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/demo_seccomp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 demo_seccomp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_seccomp/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/demo_seccomp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 demo_seccomp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_runtime">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/runtime/demo_runtime" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/runtime"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 demo_runtime"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo_runtime/fast">
+				<Option output="/home/janoszen/CLionProjects/demo-container-runtime/runtime/demo_runtime" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/janoszen/CLionProjects/demo-container-runtime/runtime"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 demo_runtime/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/janoszen/CLionProjects/demo-container-runtime/runtime/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/bash-with-no-caps.cpp">
+			<Option target="demo_cap"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/bash-in-mount-ns.cpp">
+			<Option target="demo_namespaces_mount"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/bash-in-net-ns.cpp">
+			<Option target="demo_namespaces_net"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/bash-in-pid-ns.cpp">
+			<Option target="demo_namespaces_pid"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/bash-in-uts-ns.cpp">
+			<Option target="demo_namespaces_uts"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/bash-in-seccomp.cpp">
+			<Option target="demo_seccomp"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/CleanMountsSeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/CleanMountsSeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/MountImageSeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/MountImageSeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/MountNamespaceSeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/MountNamespaceSeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/NetNamespaceSeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/NetNamespaceSeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/PidNamespaceSeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/PidNamespaceSeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/SeparationFailedException.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/SeparationFailedException.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/SeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/SeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/SeparationPluginList.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/SeparationPluginList.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/UtsNamespaceSeparationPlugin.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/plugin/UtsNamespaceSeparationPlugin.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/runtime.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/separate.cpp">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/separate.h">
+			<Option target="demo_runtime"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/capabilities/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\capabilities\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\namespaces\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/mount/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\namespaces\mount\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/net/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\namespaces\net\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/pid/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\namespaces\pid\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/namespaces/uts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\namespaces\uts\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/demo/seccomp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\demo\seccomp\"/>
+		</Unit>
+		<Unit filename="/home/janoszen/CLionProjects/demo-container-runtime/runtime/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\runtime\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
