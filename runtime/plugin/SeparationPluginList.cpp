@@ -6,9 +6,9 @@ SeparationPluginList::SeparationPluginList() {
 }
 
 SeparationPluginList::~SeparationPluginList() {
-    for (auto plugin : plugins) {
+    /*for (auto plugin : plugins) {
         delete(plugin);
-    }
+    }*/
 }
 
 void SeparationPluginList::add(SeparationPlugin * plugin) {

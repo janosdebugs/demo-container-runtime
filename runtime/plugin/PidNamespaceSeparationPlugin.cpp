@@ -4,7 +4,7 @@
 
 #include "PidNamespaceSeparationPlugin.h"
 
-void PidNamespaceSeparationPlugin::beforeClone() noexcept(false) {
+void PidNamespaceSeparationPlugin::beforeClone() throw (SeparationFailedException) {
 
 }
 
@@ -12,7 +12,7 @@ int PidNamespaceSeparationPlugin::getCloneFlags() {
     return CLONE_NEWPID;
 }
 
-void PidNamespaceSeparationPlugin::afterClone() noexcept(false) {
+void PidNamespaceSeparationPlugin::afterClone() throw (SeparationFailedException) {
 
 }
 

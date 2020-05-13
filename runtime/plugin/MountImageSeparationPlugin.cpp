@@ -11,7 +11,7 @@ MountImageSeparationPlugin::MountImageSeparationPlugin(const std::string &image)
     this->image = image;
 }
 
-void MountImageSeparationPlugin::beforeClone() noexcept(false) {
+void MountImageSeparationPlugin::beforeClone() throw (SeparationFailedException) {
 
 }
 
@@ -19,7 +19,7 @@ int MountImageSeparationPlugin::getCloneFlags() {
     return 0;
 }
 
-void MountImageSeparationPlugin::afterClone() noexcept(false) {
+void MountImageSeparationPlugin::afterClone() throw (SeparationFailedException) {
     struct stat statInfo{};
     if (lstat("/tmp/containerimage", &statInfo) < 0) {
         if (mkdir("/tmp/containerimage", 0700) < 0) {

@@ -5,9 +5,9 @@
 
 class SeparationPlugin {
     public:
-        virtual void beforeClone() noexcept(false) = 0;
+        virtual void beforeClone() throw (SeparationFailedException) = 0;
         virtual int getCloneFlags() = 0;
-        virtual void afterClone() noexcept(false) = 0;
+        virtual void afterClone() throw (SeparationFailedException) = 0;
         virtual ~SeparationPlugin() = default;
 };
 

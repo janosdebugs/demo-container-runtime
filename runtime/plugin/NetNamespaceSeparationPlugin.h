@@ -5,9 +5,9 @@
 
 class NetNamespaceSeparationPlugin: public SeparationPlugin {
 public:
-    void beforeClone() noexcept(false) override;
+    void beforeClone() throw (SeparationFailedException) override;
 
-    void afterClone() noexcept(false) override;
+    void afterClone() throw (SeparationFailedException) override;
 
     int getCloneFlags() override;
 
