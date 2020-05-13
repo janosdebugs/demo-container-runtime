@@ -32,7 +32,7 @@ int execute(std::vector<std::string> argv) {
     for (int i = 0; i < cStringArgv.size(); i++) {
         cArgv[i] = strdup(cStringArgv[i]);
     }
-    cArgv[cStringArgv.size()] = (char *)NULL;
+    cArgv[cStringArgv.size()] = (char *)nullptr;
 
     if (execv(cArgv[0], cArgv) < 0) {
         throw SeparationFailedException("execve failed");

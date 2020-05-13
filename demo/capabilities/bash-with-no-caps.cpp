@@ -16,7 +16,7 @@ int main() {
         error("Failed to apply capabilities");
 
     char bashPath[] = "/bin/bash";
-    char *const paramList[] = {bashPath};
+    char *const paramList[] = {bashPath, nullptr};
     if (execv(paramList[0], paramList) != 0) {
         perror("Failed to execute bash.");
         exit(EXIT_FAILURE);

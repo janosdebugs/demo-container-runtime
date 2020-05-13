@@ -27,7 +27,7 @@ int main(int argc, char **argv, char **envp) {
 
     printf("Now running bash with the bind syscall disabled. Try running telnet google.com 80 !\n");
     char bashPath[] = "/bin/bash";
-    char *const paramList[] = {bashPath};
+    char *const paramList[] = {bashPath, nullptr};
     if (execv(bashPath, paramList) < 0) {
         perror("Failed running bash.");
         return -1;

@@ -41,7 +41,7 @@ static int child(void* arg) {
     //region start bash
     printf("Starting bash inside a mount namespace. You should be able to safely unmount any mount point...\n");
     char bashPath[] = "/bin/bash";
-    char *const paramList[] = {bashPath};
+    char *const paramList[] = {bashPath, nullptr};
     if (execv(bashPath, paramList) < 0) {
         perror("Failed running bash inside the container.");
         return -1;

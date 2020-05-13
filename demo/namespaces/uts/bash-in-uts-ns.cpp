@@ -18,7 +18,7 @@
 
 static int child(void *arg) {
     char bashPath[] = "/bin/bash";
-    char *const paramList[] = {bashPath};
+    char *const paramList[] = {bashPath, nullptr};
 
     if (sethostname("test", 4) < 0) {
         perror("Failed set host name.");

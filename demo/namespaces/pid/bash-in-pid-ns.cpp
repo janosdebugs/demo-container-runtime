@@ -17,7 +17,7 @@
 
 static int child(void *arg) {
     char bashPath[] = "/bin/bash";
-    char *const paramList[] = {bashPath};
+    char *const paramList[] = {bashPath, nullptr};
 
     //Make mount point into a slave so "outside" processes are not affected.
     printf("Changing the /proc mountpoint to slave...\n");
