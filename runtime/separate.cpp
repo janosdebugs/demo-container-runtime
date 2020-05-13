@@ -37,6 +37,8 @@ int execute(std::vector<std::string> argv) {
     if (execv(cArgv[0], cArgv) < 0) {
         throw SeparationFailedException("execve failed");
     }
+
+    return 0;
 }
 
 /**

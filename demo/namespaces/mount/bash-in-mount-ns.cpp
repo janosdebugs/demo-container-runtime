@@ -47,6 +47,8 @@ static int child(void* arg) {
         return -1;
     }
     //endregion
+
+    return 0;
 }
 
 int main() {

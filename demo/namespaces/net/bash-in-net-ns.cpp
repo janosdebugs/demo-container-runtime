@@ -26,6 +26,8 @@ static int child(void *arg) {
         perror("Failed running bash.");
         return -1;
     }
+
+    return 0;
 }
 
 int main() {

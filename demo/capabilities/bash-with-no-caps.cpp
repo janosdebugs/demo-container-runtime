@@ -21,4 +21,6 @@ int main() {
         perror("Failed to execute bash.");
         exit(EXIT_FAILURE);
     }
+
+    return 0;
 }
