@@ -2,7 +2,7 @@
 #include <sys/mount.h>
 #include "CleanMountsSeparationPlugin.h"
 
-void CleanMountsSeparationPlugin::beforeClone() throw(SeparationFailedException) {
+void CleanMountsSeparationPlugin::beforeClone() noexcept(false) {
 
 }
 
@@ -10,7 +10,7 @@ int CleanMountsSeparationPlugin::getCloneFlags() {
     return 0;
 }
 
-void CleanMountsSeparationPlugin::afterClone() throw(SeparationFailedException) {
+void CleanMountsSeparationPlugin::afterClone() noexcept(false) {
     struct mntent *mountEntry;
     FILE *procFile;
 
@@ -27,3 +27,5 @@ void CleanMountsSeparationPlugin::afterClone() throw(SeparationFailedException) 
     }
     endmntent(procFile);
 }
+
+CleanMountsSeparationPlugin::~CleanMountsSeparationPlugin() = default;

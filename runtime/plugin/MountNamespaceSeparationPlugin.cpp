@@ -3,7 +3,7 @@
 #include <sys/mount.h>
 #include "MountNamespaceSeparationPlugin.h"
 
-void MountNamespaceSeparationPlugin::beforeClone() throw(SeparationFailedException) {
+void MountNamespaceSeparationPlugin::beforeClone() noexcept(false) {
 
 }
 
@@ -11,7 +11,7 @@ int MountNamespaceSeparationPlugin::getCloneFlags() {
     return 0;
 }
 
-void MountNamespaceSeparationPlugin::afterClone() throw(SeparationFailedException) {
+void MountNamespaceSeparationPlugin::afterClone() noexcept(false) {
     struct mntent *mountEntry;
     FILE *procFile;
 
@@ -27,3 +27,5 @@ void MountNamespaceSeparationPlugin::afterClone() throw(SeparationFailedExceptio
     }
     endmntent(procFile);
 }
+
+MountNamespaceSeparationPlugin::~MountNamespaceSeparationPlugin() = default;

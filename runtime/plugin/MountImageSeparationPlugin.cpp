@@ -11,7 +11,7 @@ MountImageSeparationPlugin::MountImageSeparationPlugin(const std::string &image)
     this->image = image;
 }
 
-void MountImageSeparationPlugin::beforeClone() throw(SeparationFailedException) {
+void MountImageSeparationPlugin::beforeClone() noexcept(false) {
 
 }
 
@@ -19,7 +19,7 @@ int MountImageSeparationPlugin::getCloneFlags() {
     return 0;
 }
 
-void MountImageSeparationPlugin::afterClone() throw(SeparationFailedException) {
+void MountImageSeparationPlugin::afterClone() noexcept(false) {
     struct stat statInfo{};
     if (lstat("/tmp/containerimage", &statInfo) < 0) {
         if (mkdir("/tmp/containerimage", 0700) < 0) {
@@ -71,3 +71,5 @@ void MountImageSeparationPlugin::afterClone() throw(SeparationFailedException) {
         throw SeparationFailedException("Failed to chdir to /");
     }
 }
+
+MountImageSeparationPlugin::~MountImageSeparationPlugin() = default;

@@ -5,11 +5,13 @@
 
 class CleanMountsSeparationPlugin: public SeparationPlugin {
 public:
-    void beforeClone() throw(SeparationFailedException) override;
+    void beforeClone() noexcept(false) override;
 
     int getCloneFlags() override;
 
-    void afterClone() throw(SeparationFailedException) override;
+    void afterClone() noexcept(false) override;
+
+    ~CleanMountsSeparationPlugin() override;
 };
 
 

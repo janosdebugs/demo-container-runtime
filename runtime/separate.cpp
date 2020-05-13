@@ -57,7 +57,7 @@ int child(void * ignored) {
     return execute(argv);
 }
 
-pid_t separate(int flags) throw(SeparationFailedException) {
+pid_t separate(int flags) noexcept(false) {
     //region stack magic
     size_t STACK_SIZE = 1024 * 1024;
     void *stack = malloc(STACK_SIZE);
@@ -80,7 +80,7 @@ pid_t separate(int flags) throw(SeparationFailedException) {
     return childPid;
 }
 
-int run_separated(const SeparationPluginList &pluginList, const std::vector<std::string> &argvList) throw(SeparationFailedException) {
+int run_separated(const SeparationPluginList &pluginList, const std::vector<std::string> &argvList) noexcept(false) {
     //Use global variable hack to avoid pointer magic
     plugins = pluginList;
     argv = argvList;
@@ -98,4 +98,5 @@ int run_separated(const SeparationPluginList &pluginList, const std::vector<std:
     do {
         exitedPid = wait(&status);
     } while (exitedPid != childPid);
+    return 0;
 }

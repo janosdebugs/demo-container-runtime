@@ -10,11 +10,13 @@ private:
 public:
     explicit MountImageSeparationPlugin(const std::string &image);
 
-    void beforeClone() throw(SeparationFailedException) override;
+    void beforeClone() noexcept(false) override;
 
     int getCloneFlags() override;
 
-    void afterClone() throw(SeparationFailedException) override;
+    void afterClone() noexcept(false) override;
+
+    ~MountImageSeparationPlugin() override;
 };
 
 
