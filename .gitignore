@@ -6,6 +6,7 @@ Makefile
 progress.marks
 *.o
 *.make
+*.cbp
 CMakeFiles
 demo/capabilities/demo_cap
 demo/namespaces/mount/demo_namespaces_mount
