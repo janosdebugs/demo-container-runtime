@@ -14,11 +14,10 @@ This project is structured into two parts, each with a full description:
 
 Explore the folders and read the guides in each of them.
 
-## Trying it out for yourself
+## Try it for yourself
 
 If you want to try it out for yourself, you have to build it from source. However, note that this code is experimental.
-It should be safe to run, but to be sure, **please run it on a virtual machine / dedicated
-WSL instance.**
+It should be safe to run, but to be sure, **please run it on a Linux virtual machine / dedicated WSL instance.**
 
 ### Step 1: Build tools
 
