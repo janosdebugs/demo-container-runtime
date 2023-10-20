@@ -1,6 +1,7 @@
-# Abstract
+# Linux containers explained with code
 
 This is a demo container runtime to showcase how various Linux features, like namespaces, are used to create containers.
+Each folder contains a demo and a description on how it works so you can follow along.
 
 ![](screenshot.png)
 
