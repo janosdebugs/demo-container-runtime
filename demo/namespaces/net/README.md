@@ -26,14 +26,14 @@ process to see a separate set of network interfaces than their host OS.
 
 You can test this demo by running the `demo_namespaces_net` program as root (see [compilation instructions](../../README.md)).
 
-```bash
-$ ./demo_namespaces_net
+```
+# ./demo_namespaces_net
 ```
 
 You can then run `ip addr` and should see no network interfaces apart from the loopback:
 
-```bash
-$ ip addr
+```
+# ip addr
 1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
 ```

@@ -28,10 +28,10 @@ The code in this folder demonstrates how seccomp works. Seccomp lets you restric
 
 You can test te `demo_seccomp` application by running it:
 
-```bash
-$ ./demo_seccomp
+```
+# ./demo_seccomp
 Now running bash with the bind syscall disabled. Try running telnet google.com 80 !
-$ telnet google.com 80
+# telnet google.com 80
 Bad system call
 ```
 

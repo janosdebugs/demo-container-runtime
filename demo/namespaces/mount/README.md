@@ -42,8 +42,8 @@ Do not run this code on your laptop/work machine! Use a VM!
 You can run `demo_namespaces_mount` to remount all volumes as slaves (see [compilation instructions](../../README.md)).
 This allows you to unmount/remount all mount  points independently of the "host" operating system.
 
-```bash
-$ ./demo_namespaces_mount
+```
+# ./demo_namespaces_mount
 Remounting / as slave...
 Remounting /init as slave...
 Remounting /dev as slave...
@@ -58,8 +58,8 @@ Starting bash inside a mount namespace. You should be able to safely unmount any
 Now you can unmount a directory independently of the host. Remember that you must unmount any mount points in
 subdirectories first.
 
-```bash
-$ for mountpoint in $(mount| awk ' {print $3 }'|sort -r); do echo $mountpoint; umount $mountpoint; done
+```
+# for mountpoint in $(mount| awk ' {print $3 }'|sort -r); do echo $mountpoint; umount $mountpoint; done
 ...
 umount: /: target is busy.
 ```
@@ -69,8 +69,8 @@ take a look how the root filesystem is replaced to work around this.
 
 If you now try to run `mount`, you'll get an error message:
 
-```bash
-$ mount
+```
+# mount
 mount: failed to read mtab: No such file or directory
 ```
 

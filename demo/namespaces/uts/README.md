@@ -28,9 +28,9 @@ change the hostname for a single process while leaving other processes unaffecte
 
 Run the compiled `demo_namespaces_uts` program as root (see [compilation instructions](../../README.md)).
 
-```bash
-$ ./demo_namespaces_uts
-$ hostname
+```
+# ./demo_namespaces_uts
+# hostname
 test
 ```
 

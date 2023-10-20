@@ -18,17 +18,17 @@ find that even though you are root, you cannot do the things root normally does.
 Once you built the binary ([see instructions](../../README.md)) you can run `demo_cap` as root to check the
 capabilities:
 
-```bash
-$ cat /proc/$$/status|grep Cap
+```
+# cat /proc/$$/status|grep Cap
 CapInh: 0000000000000000
 CapPrm: 000001ffffffffff
 CapEff: 000001ffffffffff
 CapBnd: 000001ffffffffff
 CapAmb: 0000000000000000
 
-$ ./demo_cap
+# ./demo_cap
 
-$ cat /proc/$$/status|grep Cap   # <- This is now a restricted shell
+# cat /proc/$$/status|grep Cap   # <- This is now a restricted shell
 CapInh: 0000000000000000
 CapPrm: 0000000000000000
 CapEff: 0000000000000000
@@ -39,8 +39,8 @@ CapAmb: 0000000000000000
 As you can see, once the shell is running inside `demo_cap`, no capabilities are left. You can also try to do something
 you would normally be able to do a root:
 
-```bash
-$ tcpdump
+```
+# tcpdump
 tcpdump: eth0: You don't have permission to capture on that device
 (socket: Operation not permitted)
 ```
