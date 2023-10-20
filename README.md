@@ -5,21 +5,22 @@ Each folder contains a demo and a description on how it works so you can follow 
 
 ![](screenshot.png)
 
-## Contents
+## Start learning
 
 This project is structured into two parts, each with a full description:
 
-- [Individual demos](demo)
-- [Complex container runtime](runtime)
+1. [Individual demos](demo)
+2. [Complex container runtime](runtime)
 
-## Building the source
+Explore the folders and read the guides in each of them.
 
-### Warning
+## Trying it out for yourself
 
-This code is experimental and may destroy your host operating system. **Please run it on a virtual machine / dedicated
+If you want to try it out for yourself, you have to build it from source. However, note that this code is experimental.
+It should be safe to run, but to be sure, **please run it on a virtual machine / dedicated
 WSL instance.**
 
-### Build tools
+### Step 1: Build tools
 
 In order to build these demos, you will need a Linux-based C++ toolchain and cmake installed. On Ubuntu 22.04, you can
 install these packages:
@@ -28,7 +29,7 @@ install these packages:
 $ sudo apt install build-essential cmake
 ```
 
-### Dependencies
+### Step 2: Dependencies
 
 In order to compile these demos, you will need to install the header files for libcap, libseccomp and zlib. On Ubuntu
 you can do this by running:
@@ -37,7 +38,7 @@ you can do this by running:
 $ sudo apt install libcap-ng-dev libseccomp-dev zlib1g-dev
 ```
 
-### Compiling
+### Step 3: Compiling
 
 Once you have installed the dependencies, you can compile the source by running:
 
@@ -46,4 +47,5 @@ cmake .
 make
 ```
 
-Now you can run the binaries in the individual demo folders.
+Congratulations! Now each demo has a runnable binary in the folder. Follow the instructions in the individual folders
+to run them!
