@@ -1,16 +1,13 @@
-# Abstract
+# PID namespaces
 
-This directory contains a sample application to demonstrate how PID namespaces work.
+[&laquo; Back to the namespace demos](../)
 
-## Warning
+## Abstract
 
-THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+This directory contains a sample application to demonstrate how PID namespaces work. PID namespaces allow a process to
+see a separate set of processes than their host OS.
 
-## Recommended reading
-
-- [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
-
-## Detailed modus operandi
+## How it works
 
 1. First of all, the program launches a function (`child`) in a separate namespace:
    ```c
@@ -32,3 +29,21 @@ THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A 
    ```c
    mount("proc", "/proc", "proc", 0, nullptr)
    ```
+
+## Testing
+
+You can run the compiled `demo_namespace_pid` program as root (see [compilation instructions](../../README.md)).
+
+```bash
+$ ./demo_namespace_pid
+Changing the /proc mountpoint to slave...
+Remounting /proc so PID namespaces take effect...
+Launching bash in a PID namespace. ps auwfx should not show any processes outside the container.
+
+$ ps auwfx
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0   5044  3988 pts/5    S    14:10   0:00 /bin/bash
+root           8  0.0  0.0   7480  3204 pts/5    R+   14:10   0:00 ps auwfx
+```
+
+You can now exit the restricted shell by pressing `Ctrl+D`.

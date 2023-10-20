@@ -1,16 +1,13 @@
-# Abstract
+# Network namespaces
 
-This directory contains a sample application to demonstrate how network namespaces work.
+[&laquo; Back to the namespace demos](../)
 
-# Warning
+## Abstract
 
-THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+This directory contains a sample application to demonstrate how network namespaces work. Network namespaces allow a 
+process to see a separate set of network interfaces than their host OS.
 
-# Recommended reading
-
-- [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
-
-# Detailed modus operandi
+## How it works
 
 1. First of all, the program launches a function (`child`) in a separate namespace:
    ```c
@@ -24,3 +21,21 @@ THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A 
 2. The child is launched in a separate process, which is now in a new namespace. Since the network
    namespace is declared above, it does not inherit any of the hosts network devices, it must create
    its own.
+
+## Testing
+
+You can test this demo by running the `demo_namespaces_net` program as root (see [compilation instructions](../../README.md)).
+
+```bash
+$ ./demo_namespaces_net
+```
+
+You can then run `ip addr` and should see no network interfaces apart from the loopback:
+
+```bash
+$ ip addr
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+```
+
+You can now exit the restricted shell with `Ctrl+D`.

@@ -1,12 +1,12 @@
-# Abstract
+# Seccomp
 
-The code in this folder demonstrates how seccomp works.
+[&laquo; Back to the demos](../)
 
-# Warning
+## Abstract
 
-THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+The code in this folder demonstrates how seccomp works. Seccomp lets you restrict system calls.
 
-# Detailed modus operandi
+## How it works
 
 1. First, `seccomp_init` is called with the default policy as a parameter:
    ```c
@@ -23,3 +23,17 @@ THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A 
    ```
    Now the seccomp profile is active and the blocked syscalls (here: `bind`) will result in the
    seccomp engine acting.
+
+## Testing
+
+You can test te `demo_seccomp` application by running it:
+
+```bash
+$ ./demo_seccomp
+Now running bash with the bind syscall disabled. Try running telnet google.com 80 !
+$ telnet google.com 80
+Bad system call
+```
+
+As you can see, the `bind` system call has been restricted and telnet doesn't work. You can exit the restricted shell
+by pressing `Ctrl+D`.

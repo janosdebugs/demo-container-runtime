@@ -1,7 +1,6 @@
 #include <mntent.h>
 #include <sys/mount.h>
 #include "CleanMountsSeparationPlugin.h"
-#include <vector>
 #include <list>
 
 void CleanMountsSeparationPlugin::beforeClone() throw (SeparationFailedException) {
@@ -24,6 +23,10 @@ void CleanMountsSeparationPlugin::afterClone() throw (SeparationFailedException)
     auto mountEntryList = std::list<std::string>();
     while (nullptr != (mountEntry = getmntent(procFile))) {
         if (std::string(mountEntry->mnt_dir) == "/") {
+            continue;
+        }
+        if (std::string(mountEntry->mnt_dir) == "/dev") {
+            // If /dev is a mount point, keep it, we need it for later.
             continue;
         }
         mountEntryList.emplace_back(mountEntry->mnt_dir);

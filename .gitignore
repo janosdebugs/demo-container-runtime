@@ -7,6 +7,7 @@ progress.marks
 *.o
 *.make
 CMakeFiles
+demo/capabilities/demo_cap
 demo/namespaces/mount/demo_namespaces_mount
 demo/namespaces/net/demo_namespaces_net
 demo/namespaces/pid/demo_namespaces_pid

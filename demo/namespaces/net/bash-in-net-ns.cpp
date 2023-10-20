@@ -1,13 +1,3 @@
-/**
- * This program demonstrates how network namespaces work.
- *
- * ATTENTION! This program was written for demonstration purposes only! Do not use in production!
- *
- * @see https://pasztor.at/blog/under-the-hood-of-docker
- *
- * @author Janos Pasztor
- */
-
 #include <cstdio>
 #include <cstdlib>
 #include <unistd.h>

@@ -17,7 +17,7 @@ int main(int argl, char * argv[]) {
         auto image = std::string(argv[1]);
 
         auto oopArgv = std::vector<std::string>();
-        //Ignore the first element so we run a program inside the container, not this program again.
+        //Ignore the first element, so we run a program inside the container, not this program again.
         for (int i = 2; i < argl; i++) {
             oopArgv.emplace_back(argv[i]);
         }

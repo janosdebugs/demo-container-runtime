@@ -4,41 +4,45 @@ This is a demo container runtime to showcase how various Linux features, like na
 
 ![](screenshot.png)
 
-# Warning #1
+## Contents
 
-THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+This project is structured into two parts, each with a full description:
 
-# Warning #2
-
-YOU SHOULD PROBABLY NOT RUN THIS ON YOUR LAPTOP! Parts of this codebase mess with mount points, etc and could destroy
-your files. Or eat your cat. And maybe burn down your house. You have been warned.
-
-# Contents
-
-- [Simple demo applications for each aspect of containerization and detailed readmes](demo)
+- [Individual demos](demo)
 - [Complex container runtime](runtime)
 
-# Compiling
+## Building the source
 
-If you want to compile this demo, you need at least cmake 3.5 and the libseccomp header files. Compilation can be done
-with cmake:
+### Warning
 
+This code is experimental and may destroy your host operating system. **Please run it on a virtual machine / dedicated
+WSL instance.**
+
+### Build tools
+
+In order to build these demos, you will need a Linux-based C++ toolchain and cmake installed. On Ubuntu 22.04, you can
+install these packages:
+
+```bash
+$ sudo apt install build-essential cmake
 ```
+
+### Dependencies
+
+In order to compile these demos, you will need to install the header files for libcap, libseccomp and zlib. On Ubuntu
+you can do this by running:
+
+```bash
+$ sudo apt install libcap-ng-dev libseccomp-dev zlib1g-dev
+```
+
+### Compiling
+
+Once you have installed the dependencies, you can compile the source by running:
+
+```bash
 cmake .
 make
 ```
 
-This will generate a number of binaries:
-
-- demo/namespaces/mount/demo_namespaces_mount
-- demo/namespaces/net/demo_namespaces_net
-- demo/namespaces/pid/demo_namespaces_pid
-- demo/namespaces/uts/demo_namespaces_uts
-- demo/seccomp/demo_seccomp
-- runtime/demo_runtime
-
-Each of these is documented in the readme of their respective folder.
-
-# Further reading
-
-The operational theory of this runtime is explained in detail [on my blog](https://pasztor.at/blog/under-the-hood-of-docker).
+Now you can run the binaries in the individual demo folders.

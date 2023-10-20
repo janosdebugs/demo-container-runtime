@@ -1,13 +1,14 @@
-# Contents
+# Namespace demos
 
-This directory contains simple demo applications for various Linux namespaces, in particular:
+[&laquo; Back to the demos](../)
+
+In this directory, you will find demos on how to create the following Linux namespaces in C++:
 
 - [mount namespaces](mount)
 - [network namespaces](net)
 - [PID namespaces](pid)
 - [UTS (hostname) namespaces](uts)
 
-# Recommended reading:
+## Recommended reading:
 
-- [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
 - [Mount namespaces and shared subtrees](https://lwn.net/Articles/689856/)

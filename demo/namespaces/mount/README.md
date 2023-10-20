@@ -1,24 +1,23 @@
-# Abstract
+# Mount namespaces
 
-This directory contains a sample application to demonstrate how mount namespaces work.
+[&laquo; Back to the namespace demos](../)
 
-# Warning #1
+## Abstract
 
-THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+This directory contains a sample application to demonstrate how mount namespaces work. Mount namespaces allow processes
+to see a separate set of mounts than the host OS.
 
-# Warning #2
+## Warning
 
-YOU SHOULD PROBABLY NOT RUN THIS ON YOUR LAPTOP! This codebase messes with mount points, etc and could destroy your
-files. Or eat your cat. And maybe burn down your house. You have been warned.
+Do not run this code on your laptop/work machine! Use a VM!
 
 ## Recommended reading
 
-- [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
 - [Mount namespaces and shared subtrees](https://lwn.net/Articles/689856/)
 
-## Detailed modus operandi
+## How it works
 
-1. First of all, the program launches a function (`child`) in a separate namespace:
+1. First, the program launches a function (`child`) in a separate namespace:
    ```c
    pid_t childPid = clone(
        child,
@@ -37,3 +36,42 @@ files. Or eat your cat. And maybe burn down your house. You have been warned.
    ```
    Mounting as a slave means that we can now safely unmount or remount the mount point without
    affecting the parent namespace.
+
+## Testing
+
+You can run `demo_namespaces_mount` to remount all volumes as slaves (see [compilation instructions](../../README.md)).
+This allows you to unmount/remount all mount  points independently of the "host" operating system.
+
+```bash
+$ ./demo_namespaces_mount
+Remounting / as slave...
+Remounting /init as slave...
+Remounting /dev as slave...
+Remounting /dev/pts as slave...
+Remounting /dev/shm as slave...
+Remounting /dev/hugepages as slave...
+Remounting /dev/mqueue as slave...
+...
+Starting bash inside a mount namespace. You should be able to safely unmount any mount point...
+```
+
+Now you can unmount a directory independently of the host. Remember that you must unmount any mount points in
+subdirectories first.
+
+```bash
+$ for mountpoint in $(mount| awk ' {print $3 }'|sort -r); do echo $mountpoint; umount $mountpoint; done
+...
+umount: /: target is busy.
+```
+
+The last error message is normal as the root filesystem is required. In the full containerization demo, you can
+take a look how the root filesystem is replaced to work around this.
+
+If you now try to run `mount`, you'll get an error message:
+
+```bash
+$ mount
+mount: failed to read mtab: No such file or directory
+```
+
+If you hit `Ctrl+D`, however, you are back in your previous shell and your mount points should also be back to normal.

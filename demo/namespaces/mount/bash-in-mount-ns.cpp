@@ -1,14 +1,3 @@
-/**
- * This program demonstrates how mount namespaces work.
- *
- * ATTENTION! This program was written for demonstration purposes only! Do not use in production!
- *
- * @see https://pasztor.at/blog/under-the-hood-of-docker
- * @see https://lwn.net/Articles/689856/
- *
- * @author Janos Pasztor
- */
-
 #include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
@@ -16,7 +5,6 @@
 #include <wait.h>
 #include <sys/mount.h>
 #include <mntent.h>
-
 
 static int child(void* arg) {
     //region Remount all mount points as slaves, so they can be unmounted independently.

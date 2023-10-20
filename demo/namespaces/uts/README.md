@@ -1,16 +1,13 @@
-# Abstract
+# UTS namespaces
 
-This directory contains a sample application to demonstrate how UTS namespaces work.
+[&laquo; Back to the namespace demos](../)
 
-# Warning
+## Abstract
 
-THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A PRODUCTION ENVIRONMENT!
+This directory contains a sample application to demonstrate how UTS namespaces work. UTS namespaces allow you to
+change the hostname for a single process while leaving other processes unaffected.
 
-# Recommended reading
-
-- [Under the hood of Docker](https://pasztor.at/blog/under-the-hood-of-docker)
-
-# Detailed modus operandi
+# How it works
 
 1. First of all, the program launches a function (`child`) in a separate namespace:
    ```c
@@ -26,3 +23,15 @@ THIS CODE IS INTENDED FOR DEMONSTRATION PURPOSES ONLY AND IS NOT SUITABLE FOR A 
    ```c
    sethostname("test", 4)
    ```
+
+## Testing
+
+Run the compiled `demo_namespaces_uts` program as root (see [compilation instructions](../../README.md)).
+
+```bash
+$ ./demo_namespaces_uts
+$ hostname
+test
+```
+
+As you can see, the hostname for this shell has been changed to `test`. You can exit the shell with `Ctrl+D`.
