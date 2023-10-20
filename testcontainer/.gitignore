@@ -1,2 +1,3 @@
 build
 container.img
+*.tar.gz
