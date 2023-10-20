@@ -43,9 +43,18 @@ $ sudo apt install libcap-ng-dev libseccomp-dev zlib1g-dev
 Once you have installed the dependencies, you can compile the source by running:
 
 ```bash
-cmake .
-make
+$ cmake .
+$ make
 ```
 
 Congratulations! Now each demo has a runnable binary in the folder. Follow the instructions in the individual folders
-to run them!
+to run them.
+
+## License
+
+The purpose of this repository is to serve as a learning basis for anyone who comes here. As such, feel free to use
+it for your own personal learning. Furthermore, if you are *personally* teaching a class, feel free to use it as demo
+material.
+
+If you want to use it as accompanying material for your video course, or other uses, please link your students to this
+repository.
