@@ -56,5 +56,5 @@ The purpose of this repository is to serve as a learning basis for anyone who co
 it for your own personal learning. Furthermore, if you are *personally* teaching a class, feel free to use it as demo
 material.
 
-If you want to use it as accompanying material for your video course, or other uses, please link your students to this
-repository.
+If you want to use it as accompanying material for your video course (e.g. Udemy) or other uses, please link your
+students to this repository.
